@@ -1,0 +1,13 @@
+.cruzRoot{
+	position: relative;
+
+}
+.cruzRoot__text{
+	position: absolute;
+	top:50%;
+	transform: translateY(-40%);
+	left:0;
+	width: 100%;
+	text-align:center;
+	
+}
