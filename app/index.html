@@ -9,15 +9,43 @@
   <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
-<div class="cruzRoot">
-	<img src="assets/images/oathillFlowerLg.png" alt="cruzRoot">
-	<div class="cruzRoot__text">
-		<h1 > CycloVibe Collective </h1>
-		<h2> Media gathered from atop of two wheels</h2>
-		<p> We gather diaries of fellow cyclist documenting their journey's across mother earth. </p>
-		<p><a href="#">Donate Today</a></p>
+  <header>
+    <img src="assets/images/icons/clear-view-escapes.svg">
+    <a href="#" class="btn">Get in Touch</a>
+    <nav>
+      <ul>
+        <li><a href="#our-beginning">Our Beginning</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+	<div class="cruzRoot">
+		<picture>
+			<source srcset="assets/images/oathillPaintLg.png 1920w, assets/images/oathillPaintLg-hi.png 3840w" media="(min-width: 1380px)">
+			<source srcset="assets/images/oathillPaintMd.png 1380w, assets/images/oathillPaintMd-hi.png 2760w" media="(min-width: 990px)">
+			<source srcset="assets/images/oathillPaintSm.png 990w, assets/images/oathillPaintSm-hi.png 1980" media="(min-width: 640px)">
+			<img srcset="assets/images/oathillPaintSmr.png 640w,assets/images/oathillPaintSmr-hi.png 1280w" alt="poppy">
+		</picture>
+	</div>
+		<div class="cruzRoot__text">
+			<h1 class="cruzRoot__title" > CycloVibe.</h1>
+			<h2 class="cruzRoot__subtitle"> Experience two wheels.</h2>
+			<p class="cruzRoot__desc">A collection of art influenzed by the bicycle. </p>
+			<p><a href="#" class="btn btn--orange btn--large">Donate Today</a></p>
+		</div>
+	</div>
+	<div>
+		<picture>
+			<source srcset="assets/images/skylinePoppyLg.png" media="(min-width: 1200px)">
+			<source srcset="assets/images/skylinePoppyMd.png" media="(min-width: 760px)">
+			<img src="assets/images/skylinePoppySm.png" alt="poppy">
+		</picture>
 	</div>
 
-</div>
+	<footer>
+    	<p>Copyright &copy; 2016 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
+  	</footer>
 </body>
 </html>

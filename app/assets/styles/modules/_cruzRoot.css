@@ -1,13 +1,74 @@
 .cruzRoot{
 	position: relative;
+	height:auto;
 
-}
-.cruzRoot__text{
-	position: absolute;
-	top:50%;
-	transform: translateY(-40%);
-	left:0;
-	width: 100%;
-	text-align:center;
-	
+
+	&__text{
+		position: absolute;
+		top:50%;
+		left:0;
+		width: 100%;
+		text-align:center;
+		transform: translateY(-10%);
+		@mixin atSmall{
+			transform: translateY(20%);
+		}
+		@mixin atMedium{
+			transform: translateY(20%);
+		}
+		@mixin atLarge{
+			transform: translateY(10%);
+		}
+	}
+	&__title{
+		font-weight: 300;
+		color:$mainBlue;
+		font-size: 1.1rem;
+		margin: 0;
+		@mixin atSmall{
+			font-size: 2rem;
+		}
+		@mixin atMedium{
+			font-size: 3.2rem;
+		}
+		@mixin atLarge{
+			font-size: 4.8rem;
+		}
+	}
+	&__subtitle{
+		font-weight: 300;
+		color:$mainRed;
+		font-size: .8rem;
+		margin: 0;
+		@mixin atSmall{
+			font-size: 1.1rem;
+		}
+		@mixin atMedium{
+			font-size: 2rem;
+		}
+		@mixin atLarge{
+			font-size: 3.2rem;
+		}
+	}
+	&__desc{
+		color: white;
+		font-size: .8rem;
+		font-weight: 100;
+		text-shadow:2px 2px 0 rgba(0,0,0,.1);
+		max-width:50rem;
+		margin-left:auto;
+		margin-right: auto;
+		@mixin atSmall{
+			font-size: 1.1rem;
+			max-width:20rem;
+		}
+		@mixin atMedium{
+			font-size: 2rem;
+			max-width:30rem;
+		}
+		@mixin atLarge{
+			font-size: 3.2rem;
+			max-width:40rem;
+		}
+	}
 }
