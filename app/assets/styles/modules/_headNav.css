@@ -1,0 +1,9 @@
+.headNav{
+	background-color: black;
+	@mixin clearfix;
+	border-bottom: 10px solid $mainRed;
+	&--img {
+	height: 60px;
+	width:100%;
+	}
+}
