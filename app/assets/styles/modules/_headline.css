@@ -1,5 +1,5 @@
 .headline{
-	@mixin clearfix;
+
 	font-weight:300;
 	font-size: 1.9rem;
 	color: $mainBlue;
@@ -32,5 +32,8 @@
 	}
 	&--bMarginLarge{
 		margin-bottom: 1.6em;
+	}
+	&--NoTmargin{
+		margin-top: 0;
 	}
 }

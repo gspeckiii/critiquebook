@@ -1,6 +1,7 @@
 @import "normalize.css";
-@import "base/_global";
 @import "base/_variables";
+@import "base/_global";
+
 @import "base/_mixins";
 @import "modules/_head";
 @import "modules/_btn";
@@ -9,3 +10,6 @@
 @import "modules/_pageSec";
 @import "modules/_headline";
 @import "modules/_row";
+@import "modules/_content";
+@import "modules/_secTitle";
+@import "modules/_featureItem";

@@ -4,11 +4,24 @@
 	&--gutters {
 		margin-right: -65px;
 	}
+	&--guttersLg {
+		margin-right: -100px;
+	}
+
 
 	&--gutters > div {
 		padding-right: 65px;
 	}
+	&--guttersLg > div {
+		padding-right: 65px;
+	}
+	&__bMarginForMed{
+		margin-bottom: 65px;
+	}
 	@mixin atMedium{
+		&__bMarginForMed{
+		margin-bottom: 0px;
+		}
 		&__med4 {
 			float:left;
 			width:33.33%;
@@ -24,6 +37,11 @@
 		&__med8--smaller {
 			width: 63%;
 		}
+		&__med6{
+			float:left;
+			width:50%;
+		}
+
 	}
 
 }

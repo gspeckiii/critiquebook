@@ -4,5 +4,11 @@
 	@mixin atMedium{
 		padding: 4.5rem 0;
 	}
+	&--Black{
+		background-color:black;
+	}
+	&--fontWhite{
+		color:white;
+	}
 	
 }
