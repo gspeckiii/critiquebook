@@ -7,6 +7,12 @@
 	&--guttersLg {
 		margin-right: -100px;
 	}
+	&--guttersSm{
+		margin-right:-45px;
+	}
+	&--tPadding{
+		padding-top: 80px;
+	}
 
 
 	&--gutters > div {
@@ -14,6 +20,9 @@
 	}
 	&--guttersLg > div {
 		padding-right: 65px;
+	}
+	&--guttersSm > div {
+		padding-right: 45px;
 	}
 	&__bMarginForMed{
 		margin-bottom: 65px;
@@ -42,6 +51,53 @@
 			width:50%;
 		}
 
+	}
+
+	@mixin atLarge{
+		&__bMarginForLg{
+		margin-bottom: 0px;
+		}
+		&__lg4 {
+			float:left;
+			width:33.33%;
+		}
+		&__lg4--larger{
+			width: 37%;
+
+		}
+		&__lg8 {
+			float:left;
+			width: 66.66%;
+		}
+		&__lg8--smaller {
+			width: 63%;
+		}
+		&__lg6{
+			float:left;
+			width:50%;
+		}
+
+	}
+
+
+/*begin equal height rules*/
+	&--eqHtMd{
+		@mixin atMedium{
+			display:flex;
+		}
+		& > div{
+			float:none;
+			display:flex;	
+		}
+	}
+		&--eqHtLg{
+		@mixin atLarge{
+			display:flex;
+		}
+		& > div{
+			float:none;
+			display:flex;	
+		}
 	}
 
 }

@@ -10,5 +10,25 @@
 	&--fontWhite{
 		color:white;
 	}
+	&--race{
+		background:#e0e6ef;
+		@mixin atLarge{
+			background:url('/assets/images/mendoBark.png') top center no-repeat;
+			background-size:cover;
+		}
+
+	}
+	&--bNoPadUntilMed{
+		padding-bottom:0;
+		@mixin atMedium{
+			padding-bottom:4.5rem;
+		}
+	}
+		&--bNoPadUntilLg{
+		padding-bottom:0;
+		@mixin atLarge{
+			padding-bottom:4.5rem;
+		}
+	}
 	
 }

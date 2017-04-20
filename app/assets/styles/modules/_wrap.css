@@ -10,9 +10,25 @@
 	&--medium{
 		max-width:976px;
 	}
+	&--noPadUntilMed{
+		padding-left:0;
+		padding-right:0;
+		@mixin atMedium{
+			padding-left:18px;
+			padding-right:18px;
+		}
+	}
+	&--noPadUntilMed{
+		padding-left:0;
+		padding-right:0;
+		@mixin atLarge{
+			padding-left:18px;
+			padding-right:18px;
+		}
+	}
 	.wrap{
-		padding-right: 0;
-		padding-left: 0;
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 	&--bMargin{
 		margin-bottom: 1rem;

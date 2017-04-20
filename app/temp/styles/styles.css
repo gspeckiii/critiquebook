@@ -469,16 +469,16 @@ a{
 @media(min-width:768px) {
 
   .head__text {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 }
 
-@media(min-width:1024px) {
+@media(min-width:1010px) {
 
   .head__text {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 
@@ -575,9 +575,35 @@ a{
   max-width:976px;
 }
 
+.wrap--noPadUntilMed{
+  padding-left:0;
+  padding-right:0;
+}
+
+@media(min-width:768px) {
+
+  .wrap--noPadUntilMed {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+.wrap--noPadUntilMed{
+  padding-left:0;
+  padding-right:0;
+}
+
+@media(min-width:1010px) {
+
+  .wrap--noPadUntilMed {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 .wrap .wrap{
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .wrap--bMargin{
@@ -625,6 +651,40 @@ a{
 
 .pageSec--fontWhite{
   color:white;
+}
+
+.pageSec--race{
+  background:#e0e6ef;
+}
+
+@media(min-width:1010px) {
+
+  .pageSec--race {
+    background: url('/assets/images/mendoBark.png') top center no-repeat;
+    background-size: cover;
+  }
+}
+
+.pageSec--bNoPadUntilMed{
+  padding-bottom:0;
+}
+
+@media(min-width:768px) {
+
+  .pageSec--bNoPadUntilMed {
+    padding-bottom: 4.5rem;
+  }
+}
+
+.pageSec--bNoPadUntilLg{
+  padding-bottom:0;
+}
+
+@media(min-width:1010px) {
+
+  .pageSec--bNoPadUntilLg {
+    padding-bottom: 4.5rem;
+  }
 }
 
 .headline{
@@ -696,12 +756,24 @@ a{
   margin-right: -100px;
 }
 
+.row--guttersSm{
+  margin-right:-45px;
+}
+
+.row--tPadding{
+  padding-top: 80px;
+}
+
 .row--gutters > div {
   padding-right: 65px;
 }
 
 .row--guttersLg > div {
   padding-right: 65px;
+}
+
+.row--guttersSm > div {
+  padding-right: 45px;
 }
 
 .row__bMarginForMed{
@@ -738,6 +810,70 @@ a{
   }
 }
 
+@media(min-width:1010px) {
+
+  .row__bMarginForLg {
+    margin-bottom: 0px;
+  }
+
+  .row__lg4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row__lg4--larger {
+    width: 37%;
+  }
+
+  .row__lg8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .row__lg8--smaller {
+    width: 63%;
+  }
+
+  .row__lg6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+/*begin equal height rules*/
+
+@media(min-width:768px) {
+
+  .row--eqHtMd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.row--eqHtMd > div{
+  float:none;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+@media(min-width:1010px) {
+
+  .row--eqHtLg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.row--eqHtLg > div{
+  float:none;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+
 .content p{
   line-height:1.65;
   margin:1.8rem 0;
@@ -764,6 +900,10 @@ a{
 
 }
 
+.secTitle--red {
+  color:#800000;
+}
+
 @media(min-width:530px) {
 
   .secTitle {
@@ -785,11 +925,17 @@ a{
 @media(min-width:530px) {
 
   .secTitle__icon {
+    position: relative;
+    top: 8px;
     margin-right: .5rem;
     margin-left: 0;
     display: inline-block;
     margin-bottom: 0;
   }
+}
+
+.secTitle--blue{
+  color:#2f5572;
 }
 
 .featureItem{
@@ -833,4 +979,52 @@ a{
   .featureItem {
     padding-left: 94px;
   }
+}
+
+.reviews{
+	background-color: rgba(255,255,255,.6);
+		padding: 0 18px 1px 18px;
+	color:black;
+	margin-bottom: 98px;
+
+
+}
+
+@media(min-width:768px) {
+
+  .reviews {
+    padding: 0 1.8125rem 1px 1.8125rem;
+    margin-bottom: 0;
+  }
+}
+
+.reviews--last{
+  margin-bottom:0;
+}
+
+.reviews__photo{
+  border-radius:80px;
+  overflow:hidden;
+  height:160px;
+  width:160px;
+  margin:0 auto -80px auto;
+  position: relative;
+  top:-80px;
+  border:6px solid rgba(255,255,255,.6);
+}
+
+.reviews__title{
+  color:#2f5572;
+  text-align:center;
+  font-size:1.5rem;
+  font-weight:500;
+  margin:0;
+}
+
+.reviews__subtitle{
+  color:#800000;
+  text-align:center;
+  font-size:.9375rem;
+  font-weight:400;
+  margin:.25rem 0 1rem 0;
 }

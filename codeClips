@@ -5,3 +5,9 @@
 
 	width:4595px;
 	height:100px;
+
+			<picture>
+			<source srcset="assets/images/skylinePoppyLg.png" media="(min-width: 1200px)">
+			<source srcset="assets/images/skylinePoppyMd.png" media="(min-width: 760px)">
+			<img src="assets/images/skylinePoppySm.png" alt="poppy">
+		</picture>
