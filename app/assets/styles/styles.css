@@ -6,7 +6,7 @@
 @import "modules/_head";
 @import "modules/_btn";
 @import "modules/_wrap";
-@import "modules/_headNav";
+@import "modules/_primeNav";
 @import "modules/_pageSec";
 @import "modules/_headline";
 @import "modules/_row";
@@ -16,3 +16,4 @@
 @import "modules/_reviews";
 @import "modules/_sprite";
 @import "modules/_footer";
+@import "modules/_header";

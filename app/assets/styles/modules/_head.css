@@ -9,20 +9,22 @@
 
 	&__text{
 		position: absolute;
-		top:25%;
+		top:0;
 		left:0;
+		padding-top:88px;
 		width: 100%;
 		text-align:center;
 		transform: translateY(0%);
 
 		@mixin atMedium{
-			transform: translateY(-30%);
+			top:25%;
 		}
 		@mixin atLarge{
+			top:0;	
 			transform: translateY(-20%);
 		}
 		@mixin atSmall{
-			transform: translateY(0%);
+			top:10%;
 		}
 	}
 	&__title{
