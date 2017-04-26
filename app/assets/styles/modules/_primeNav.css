@@ -42,6 +42,9 @@ a{
 		font-size:1rem;
 		padding:12px 0;
 		background-color:transparent;
+		&.isCurrentLink{
+			color:#ffcccc;
+		}
 	}
 }
 
