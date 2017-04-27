@@ -7,6 +7,7 @@
   <meta name="keywords" content="cycling,mountain biking, mtb, road trip, road biking, road trip">
   <meta name="description" content="Cycling journal recording new pedal based experiences and the lifesyle it affords">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <script src="/temp/scripts/Vendor.js"></script>
 </head>
 <body>
   <header class="header">
@@ -58,14 +59,14 @@
 			<h2 class="headline headline--center headline --light headline --bMarginSmall"><strong>Experience life</strong> and inspire others. </h2>
 			<h3 class="headline headline--center headline--red headline--small headline--narrow headline--light headline--bMarginLarge">Leave a legacy by reviewing the places that you <strong>love to ride.</strong> </h3>
 			<div class="wrap wrap--medium wrap--bMargin">
-				<img  sizes="(min-width:970px) 976px, 100vw" srcset="assets/images/skylineWallLow.png 565w, assets/images/skylineWallWide.png 976w, assets/images/skylineWallWideHi.png 1952w" alt="skyline Wall">
+				<img class="lazyload" sizes="(min-width:970px) 976px, 100vw" data-srcset="assets/images/skylineWallLow.png 565w, assets/images/skylineWallWide.png 976w, assets/images/skylineWallWideHi.png 1952w" alt="skyline Wall">
 			</div>
 			<div class="row row--gutters">
 			<div class="row__med4 row__med4--larger row__bMarginForMed">
 			<picture>
-		        <source sizes="404px" srcset="assets/images/skyLinePoppy.png 404w, assets/images/skyLinePoppyHi.png 808w" media= "(min-width:1200px)">
-		        <source sizes="320px" srcset="assets/images/skylinePoppyNarrow.png 382w, assets/images/skylinePoppyNarrowHi.png 764w" media= "(min-width:800px)">
-		      <img srcset="assets/images/skyLinePoppyWide.png 800w, assets/images/skyLinePoppyWideHi.png 1600w" alt="Poppy">
+		        <source sizes="404px" data-srcset="assets/images/skyLinePoppy.png 404w, assets/images/skyLinePoppyHi.png 808w" media= "(min-width:1200px)">
+		        <source sizes="320px" data-srcset="assets/images/skylinePoppyNarrow.png 382w, assets/images/skylinePoppyNarrowHi.png 764w" media= "(min-width:800px)">
+		      <img class="lazyload" data-srcset="assets/images/skyLinePoppyWide.png 800w, assets/images/skyLinePoppyWideHi.png 1600w" alt="Poppy">
 	      </picture>
 			</div>
 			<div class="row__med8 row__med8--smaller"> 	
@@ -110,7 +111,7 @@
   	</div>
   </div>
 </div>
- <div id="reviews" class="pageSec pageSec--bNoPadUntilLg pageSec--race pageSec--fontWhite" data-matching-link="#reviewsLink">
+ <div id="reviews" class="pageSec pageSec--bNoPadUntilLg pageSec--race pageSec--fontWhite lazyload" data-matching-link="#reviewsLink">
 	 <div class="wrap wrap--noPadUntilLg">
 	    
 	    <h2 class="secTitle secTitle--red"><span class="secTitle__icon icon icon--comment" ></span> Race <strong>Reviews</strong></h2>
@@ -119,7 +120,7 @@
 			<div class="row__lg4">
 			    <div class="reviews">
 			    	<div class="reviews__photo">
-			    		<img sizes="160px" srcset="assets/images/raceCascadeSm.png 160w, assets/images/raceCascadeSmHi.png 320w" alt="cascade">
+			    		<img class="lazyload" sizes="160px" data-srcset="assets/images/raceCascadeSm.png 160w, assets/images/raceCascadeSmHi.png 320w" alt="cascade">
 			    	</div>
 				    <h3 class="reviews__title">Cascade 100</h3>
 				    <h4 class="reviews__subtitle">Bend, Oregon</h3>
@@ -129,7 +130,7 @@
 		   	<div class="row__lg4">
 		   		<div class="reviews">
 		   			<div class="reviews__photo">
-			   			<img sizes="160px" srcset="assets/images/raceGritSm.png 160w, assets/images/raceGritSmHi.png 320w" alt ="grit">
+			   			<img class="lazyload" sizes="160px" data-srcset="assets/images/raceGritSm.png 160w, assets/images/raceGritSmHi.png 320w" alt ="grit">
 			   		</div>
 				    <h3 class="reviews__title">True Grit</h3>
 				    <h4 class="reviews__subtitle">St. George, Utah</h3>
@@ -139,7 +140,7 @@
 		    <div class="row__lg4">
 		    <div class="reviews reviews--last">
 		    		<div class="reviews__photo">
-			    		<img sizes="160px" srcset="assets/images/racePuebloSm.png 160w, assets/images/racePuebloSmHi.png 320w" alt="pueblo">
+			    		<img class="lazyload" sizes="160px" data-srcset="assets/images/racePuebloSm.png 160w, assets/images/racePuebloSmHi.png 320w" alt="pueblo">
 			    	</div>
 				    <h3 class="reviews__title">24 Hours in Old Pueblo</h3>
 				    <h4 class="reviews__subtitle">Tucson, Arizona</h3>
@@ -147,11 +148,6 @@
 			    </div>
 		    </div>
 	    </div>
-
-
-
-
-
 
 	  	</div>
 	  </div>

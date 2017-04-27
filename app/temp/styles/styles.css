@@ -725,7 +725,7 @@ a{
 
 @media(min-width:1010px) {
 
-  .pageSec--race {
+  .pageSec--race.lazyloaded {
     background: url('/assets/images/mendoBark.png') top center no-repeat;
     background-size: cover;
   }
