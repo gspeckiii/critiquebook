@@ -81,7 +81,7 @@
 
 
 /*begin equal height rules*/
-	&--eqHtMd{
+	.flexbox &--eqHtMd{
 		@mixin atMedium{
 			display:flex;
 		}
