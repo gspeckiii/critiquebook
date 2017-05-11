@@ -1,180 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- -->
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
   <title>Cyclovibe</title>
   <meta name="keywords" content="cycling,mountain biking, mtb, road trip, road biking, road trip">
   <meta name="description" content="Cycling journal recording new pedal based experiences and the lifesyle it affords">
-  <link rel="stylesheet" href="temp/styles/styles.css">
-  <script src="/temp/scripts/Vendor.js"></script>
+ <!--Gulp automation uses postCSS & autoprefixer outputs to this temp folder-->
+ <link rel="stylesheet" href="temp/styles/styles.css">
+
+
 </head>
 <body>
-  <header class="header">
-	  <div class="wrap">
-	  	<div class="header__logo">
-	  		<div class="header__logo__graphic icon icon--clear-view-escapes">CycloVibe</div>
-	  	</div>
-	  		<div class="header__menuIcon">
-		  		<div class="header__menuIcon__middle"></div>
-	  		</div>
 
+<div class="block-header"></div>
+<div class="block-sidebar"></div>
+<div class="block-body">
 
-
-	  		<div class="header__menu">
-			  	<div class="header__btn">
-			    <a href="#" class="btn openModal" >Get in Touch</a>
-			    </div>
-			    <nav class="primeNav primeNav--pullRight">
-			      <ul>
-			        <li><a href="#exp" id="expLink">Experiences</a></li>
-			        <li><a href="#features" id="featuresLink">Features</a></li>
-			        <li><a href="#reviews" id="reviewsLink">Reviews</a></li>
-			      </ul>
-			    </nav>
-	  		</div>
-
-	  </div>
-  </header>
-
-	<div class="head">
-		<picture>
-			<source class="head__img" srcset="assets/images/oathillPaintLg.png 1920w, assets/images/oathillPaintLg-hi.png 3840w" media="(min-width: 1200px)">
-			<source class="head__img" srcset="assets/images/oathillPaintMd.png 1380w, assets/images/oathillPaintMd-hi.png 2760w" media="(min-width: 990px)">
-			<source class="head__img" srcset="assets/images/oathillPaintSm.png 990w, assets/images/oathillPaintSm-hi.png 1980w" media="(min-width: 375px)">
-			<img class="head__img" srcset="assets/images/oathillPaintSmr.png 640w,assets/images/oathillPaintSmr-hi.png 1280w" alt="poppy">
-		</picture>
+	<div class="block-square">
+		<div class="block-square--small"></div>
 	</div>
-		<div class="head__text">
-			<div class="wrap">
-				<h1 class="head__title" > CycloVibe.</h1>
-				<h2 class="head__subtitle"> Where will it take you?</h2>
-				<p class="head__desc">A collection of art influenzed by the bicycle. </p>
-				<p><a href="#" class="btn btn--red btn--large">Donate Today</a></p>
-			</div>
-		</div>
+	<div class="block-square">
+		<div class="block-square--small"></div>
 	</div>
-	<div id="exp" class="pageSec" data-matching-link="#expLink">
-		<div class="wrap">
-			<h2 class="headline headline--center headline --light headline --bMarginSmall"><strong>Experience life</strong> and inspire others. </h2>
-			<h3 class="headline headline--center headline--red headline--small headline--narrow headline--light headline--bMarginLarge">Leave a legacy by reviewing the places that you <strong>love to ride.</strong> </h3>
-			<div class="wrap wrap--medium wrap--bMargin">
-				<img class="lazyload" sizes="(min-width:970px) 976px, 100vw" data-srcset="assets/images/skylineWallLow.png 565w, assets/images/skylineWallWide.png 976w, assets/images/skylineWallWideHi.png 1952w" alt="skyline Wall">
-			</div>
-			<div class="row row--gutters">
-			<div class="row__med4 row__med4--larger row__bMarginForMed">
-			<picture>
-		        <source sizes="404px" data-srcset="assets/images/skyLinePoppy.png 404w, assets/images/skyLinePoppyHi.png 808w" media= "(min-width:1200px)">
-		        <source sizes="320px" data-srcset="assets/images/skylinePoppyNarrow.png 382w, assets/images/skylinePoppyNarrowHi.png 764w" media= "(min-width:800px)">
-		      <img class="lazyload" data-srcset="assets/images/skyLinePoppyWide.png 800w, assets/images/skyLinePoppyWideHi.png 1600w" alt="Poppy">
-	      </picture>
-			</div>
-			<div class="row__med8 row__med8--smaller"> 	
-				<div class="content">
-					<h2 class="headline headline--NoTmargin">Why do you ride bikes? </h2>
-					<p>Riding bikes is an experience everyone can enjoy.  Old and young, big and small, any ethinicity, nationality can commune with nature and other humans in exactly the same way.  Pushing each other to get stronger, braver, skinnier and in turn enjoying the bike even more.  In a technologically advanced and sometimes toxic culture all one has to do to escape back to the root of whats good about being human. Strap on a helmet, through a leg over the bike and start pedaling.  Adaptations begin immediately and so do the grins.  This website is all about documenting experiences on the bike and diplaying art influenzed by riding them. </p>
-				</div>
-			</div>
-			</div>
-		</div>
+	<div class="block-square">
+		<div class="block-square--small"></div>
 	</div>
-	<div id="features" class="pageSec pageSec--Black pageSec--fontWhite" data-matching-link="#featuresLink">
-  <div class="wrap">
-    
-    <h2 class="secTitle"><span class="icon icon--star secTitle__icon"></span> Our <strong>Features</strong></h2>
- 
-  	<div class="row row--guttersLg content">
-  		<div class="row__med6">
-  			<div class="featureItem">
-	  		<span class="featureItem__icon icon icon--rain"></span>
-			    <h3 class="featureItem__title">We&rsquo;ll Watch the Weather</h3>
-			    <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
-		    </div>
-			<div class="featureItem">
-			    <span class="featureItem__icon icon icon--globe"></span>
-			    <h3 class="featureItem__title">Global Guides</h3>
-			    <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
-		    </div>
-  		</div>
-  		 <div class="row__med6">
-  		 	<div class="featureItem">
-	  		 	<span class="featureItem__icon icon icon--wifi"></span>
-			    <h3 class="featureItem__title">Wi-Fi Waypoints</h3>
-			    <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
-		    </div>
-		    <div class="featureItem">
-			    <span class="featureItem__icon icon icon--fire"></span>
-			    <h3 class="featureItem__title">Survival Kit</h3>
-			    <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
-		    </div>
-  		</div>
-  	</div>
-  </div>
+	<div class="block-square">
+		<div class="block-square--small"></div>
+	</div>
+	<div class="block-square">
+		<div class="block-square--small"></div>
+	</div>
+
 </div>
- <div id="reviews" class="pageSec pageSec--bNoPadUntilLg pageSec--race pageSec--fontWhite lazyload" data-matching-link="#reviewsLink">
-	 <div class="wrap wrap--noPadUntilLg">
-	    
-	    <h2 class="secTitle secTitle--red"><span class="secTitle__icon icon icon--comment" ></span> Race <strong>Reviews</strong></h2>
-	    <div class="row row--gutters row--guttersSm content row--tPadding row--eqHtLg">
-	    	
-			<div class="row__lg4">
-			    <div class="reviews">
-			    	<div class="reviews__photo">
-			    		<img class="lazyload" sizes="160px" data-srcset="assets/images/raceCascadeSm.png 160w, assets/images/raceCascadeSmHi.png 320w" alt="cascade">
-			    	</div>
-				    <h3 class="reviews__title">Cascade 100</h3>
-				    <h4 class="reviews__subtitle">Bend, Oregon</h3>
-				    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-			    </div>
-		    </div>
-		   	<div class="row__lg4">
-		   		<div class="reviews">
-		   			<div class="reviews__photo">
-			   			<img class="lazyload" sizes="160px" data-srcset="assets/images/raceGritSm.png 160w, assets/images/raceGritSmHi.png 320w" alt ="grit">
-			   		</div>
-				    <h3 class="reviews__title">True Grit</h3>
-				    <h4 class="reviews__subtitle">St. George, Utah</h3>
-				    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-			    </div>
-		    </div>
-		    <div class="row__lg4">
-		    <div class="reviews reviews--last">
-		    		<div class="reviews__photo">
-			    		<img class="lazyload" sizes="160px" data-srcset="assets/images/racePuebloSm.png 160w, assets/images/racePuebloSmHi.png 320w" alt="pueblo">
-			    	</div>
-				    <h3 class="reviews__title">24 Hours in Old Pueblo</h3>
-				    <h4 class="reviews__subtitle">Tucson, Arizona</h3>
-				    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
-			    </div>
-		    </div>
-	    </div>
 
-	  	</div>
-	  </div>
-	<footer class="footer">
-    	<div class="wrap">
-			 
-			<p><span class="footer__text">Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span>
-			<a href="#" class="btn btn--red openModal">Get in Touch</a></p>    	
-    	</div>
-  	</footer>
-  	<div class="modal">
-  		<div class="modal__inner">
-	  		<h2 class="secTitle secTitle--red secTitle--lMargin"><span class="secTitle__icon icon icon--mail" ></span> Get it <strong>touch</strong></h2>
-		  	<div class="wrap wrap--narrow">
-		  		<p class="modal__desc">We will have a online order system soon, for now use platforms below! </p>
-		  	</div>
-		  	<div class="social-icons">
-		  		<a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-		  		<a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-		  		<a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-		  		<a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
-		  	</div>
-  		</div>
-
-	  	<div class="modal__close">X</div>
-
-  	</div>
-  	<script src="/temp/scripts/App.js"></script>
 </body>
 </html>

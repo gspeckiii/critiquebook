@@ -3,20 +3,10 @@
 @import "base/_global";
 
 @import "base/_mixins";
-@import "modules/_head";
-@import "modules/_btn";
-@import "modules/_wrap";
-@import "modules/_primeNav";
-@import "modules/_pageSec";
-@import "modules/_headline";
-@import "modules/_row";
-@import "modules/_content";
-@import "modules/_secTitle";
-@import "modules/_featureItem";
-@import "modules/_reviews";
-@import "modules/_sprite";
-@import "modules/_footer";
-@import "modules/_header";
-@import "modules/_revealItem";
-@import "modules/_modal";
-@import "modules/_social-icons";
+@import "modules/_block-header";
+@import "modules/_title-large";
+@import "modules/_page-padding";
+@import "modules/_block-square";
+@import "modules/_block-sidebar";
+@import "modules/_block-body";
+
