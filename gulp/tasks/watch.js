@@ -4,12 +4,14 @@ browserSync=require("browser-sync").create();
 
 gulp.task('watch',function(){
 	browserSync.init({
+		proxy: "localhost/critiquebook/app",
+    	port: 8000,
 		notify: false,
-		server:{
+		/*server:{
 			baseDir:"app"
-		}
+		}*/
 	});
-	watch('./app/index.html',function(){
+	watch('./app/index.php',function(){
 		browserSync.reload();
 	});
 

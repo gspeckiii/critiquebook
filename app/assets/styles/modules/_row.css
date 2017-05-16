@@ -1,0 +1,38 @@
+.row{
+	width:80%;
+
+	display:inline-block;
+	position:relative;
+	background-color: rgba(255,255,255,.6);
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:100px;
+	margin-bottom:50px;
+
+	
+	&__info{
+		margin-left:10px;
+		padding-left:10px;
+
+	}
+	&__img{
+
+		float:left;
+		margin-right:10px;
+		margin-bottom:10px;
+		position:relative;
+		transform: translateX(-15%);
+		border-radius:80px;
+		overflow:hidden;
+		height:160px;
+		width:160px;
+		margin:0 auto -60px auto;
+		position: relative;
+		top:-80px;
+		border:6px solid rgba(255,255,255,.6);
+
+
+
+	}
+
+}

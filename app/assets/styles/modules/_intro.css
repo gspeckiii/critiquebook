@@ -1,0 +1,70 @@
+.intro{
+	position: relative;
+	height:auto;
+	width: 100%;
+	/*border-bottom:solid;
+
+	border-width:7px;
+	border-color:black;*/
+
+
+	&__img{
+		display:block;
+	}
+	&__text{
+		position: absolute;
+		top:0;
+		left:0;
+		padding-top:25px;
+		width: 100%;
+		text-align:center;
+		transform: translateY(0%);
+
+		@mixin atMedium{
+			top:25%;
+		}
+		@mixin atLarge{
+			top:0;	
+			transform: translateY(-20%);
+		}
+		@mixin atSmall{
+			top:10%;
+		}
+	}
+	&__title{
+		font-weight: 300;
+		color:white;
+		font-size: 2.4rem;
+		margin: 0;
+		margin-bottom:15px;
+		transform:translateX(-10%);
+		@mixin atSmall{
+			font-size: 3.0rem;
+		}
+	}
+	&__subtitle{
+		font-weight: 300;
+		color:$mainGreen;
+		font-size: 1.5rem;
+		margin: 0;
+		@mixin atSmall{
+			font-size: 2.5rem;
+		}
+
+	}
+	&__desc{
+		color: black;
+		font-size: 1.25rem;
+		font-weight: 100;
+		text-shadow:2px 2px 0 rgba(0,0,0,.1);
+		max-width:30rem;
+		margin-left:auto;
+		margin-right: auto;
+		transform:translateX(30%);
+		@mixin atSmall{
+			font-size: 2rem;
+			max-width:30rem;
+
+		}
+	}
+}

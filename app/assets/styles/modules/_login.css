@@ -1,0 +1,16 @@
+.login{
+	position:absolute;
+	width:260px;
+	background-color:$mainGreen;
+	float:right;
+	margin-top:20px;
+	z-index:1;
+	clear:both;
+	right:0;
+	margin-right:25px;
+	&__input{
+		position:absolute;
+		right:0;
+		
+	}
+}
