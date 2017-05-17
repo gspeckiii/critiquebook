@@ -6,9 +6,11 @@
 	text-decoration: none;
 	padding: .75rem 1.2rem;
 	display:inline-block;
+	transform:translateY(25%);
 
-	&--red{
-		background-color: $mainRed;
+	&--black{
+		background-color: black;
+		color:white;
 	}
 		&--large{
 			font-size: 1rem;

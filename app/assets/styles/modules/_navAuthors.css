@@ -1,0 +1,29 @@
+.navAuthors{
+	display:block;
+ position:absolute;
+ top:25px;
+ left:50px;
+ z-index:4;
+background-color: rgba(255,255,255,.33);
+ width:300px;
+ 
+ text-decoration:none;
+ul{
+
+	list-style:none;	
+}
+li a{
+	text-decoration:none;
+	color:black;
+	font-size:1.55rem;
+		
+		
+}
+
+}
+.navAuthors ul li :hover{
+
+	background-color: rgba($mainRed,.33);
+	color:black;
+	display:block;	
+}

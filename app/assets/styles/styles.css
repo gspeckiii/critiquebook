@@ -8,7 +8,10 @@
 @import "modules/_intro";
 @import "modules/_btn";
 @import "modules/_row";
-@import "modules/_table-content";
+@import "modules/_critic-content";
+@import "modules/_reviews-content";
 @import "modules/_login";
-
+@import "modules/_navDrop";
+@import "modules/_navAuthors";
+@import "modules/_navCritics";
 

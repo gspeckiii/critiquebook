@@ -432,6 +432,8 @@ body{
 	font-family:Lora;
 	color:#333;
 	margin:0;
+	line-height:2;
+	background-image:url(http://localhost:8000/critiquebook/app/assets/images/body12K48K.png);
 
 }
 
@@ -453,6 +455,10 @@ img{
 
 a{
 	color:#dda1a8;
+}
+
+p{
+	font-size:1.1rem;
 }
 
 /*  SECTIONS  ============================================================================= */
@@ -1243,10 +1249,13 @@ a{
 	text-decoration: none;
 	padding: .75rem 1.2rem;
 	display:inline-block;
+	-webkit-transform:translateY(25%);
+	        transform:translateY(25%);
 }
 
-.btn--red{
-  background-color: #dda1a8;
+.btn--black{
+  background-color: black;
+  color:white;
 }
 
 .btn--large{
@@ -1278,6 +1287,8 @@ a{
 .row__info{
   margin-left:10px;
   padding-left:10px;
+  margin-right:10px;
+  padding-right:10px;
 }
 
 .row__img{
@@ -1297,17 +1308,47 @@ a{
   border:6px solid rgba(255,255,255,.6);
 }
 
-.table-content{
+.critic-content{
 	margin-left:50px;
-	-webkit-transform:translateY(-10%);
-	        transform:translateY(-10%);
+	-webkit-transform:translateY(-200px);
+	        transform:translateY(-200px);
 	width:33%;
 	background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci.png);
+	display:inline-block;
 }
 
-.table-content__img{/*background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci.png);
+.critic-content__img{/*background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci.png);
 		background-color:black;
 		width:100%;*/
+}
+
+.critic-content__title{
+  font-weight: 300;
+  color:white;
+  font-size: 2.4rem;
+  text-align:center;
+}
+
+.reviews-content{
+	margin-right:50px;
+    float:right;
+    display:inline-block;
+	width:55%;
+	background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci750px.png);
+	-webkit-transform:translateY(-75px);
+	        transform:translateY(-75px);
+}
+
+.reviews-content__img{/*background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci.png);
+		background-color:black;
+		width:100%;*/
+}
+
+.reviews-content__title{
+  font-weight: 1;
+  color:white;
+  font-size: 2.4rem;
+  text-align:center;
 }
 
 .login{
@@ -1327,4 +1368,63 @@ a{
   right:0;
 }
 
+.navAuthors{
+	display:block;
+ position:absolute;
+ top:25px;
+ left:50px;
+ z-index:4;
+background-color: rgba(255,255,255,.33);
+ width:300px;
+ 
+ text-decoration:none;
+
+}
+
+.navAuthors ul{
+  list-style:none;
+}
+
+.navAuthors li a{
+  text-decoration:none;
+  color:black;
+  font-size:1.55rem;
+}
+
+.navAuthors ul li :hover{
+
+	background-color: rgba(221,161,168,.33);
+	color:black;
+	display:block;	
+}
+
+.navCritics{
+	
+ position:absolute;
+ top:150px;
+ left:50px;
+ z-index:4;
+background-color: rgba(255,255,255,.33);
+ 	width:300px;
+ 
+ text-decoration:none;
+
+}
+
+.navCritics ul{
+  list-style:none;
+}
+
+.navCritics li a{
+  text-decoration:none;
+  color:black;
+  font-size:1.55rem;
+  display:block;
+}
+
+.navCritics ul li :hover {
+	display:block;
+	background-color: rgba(221,161,168,.33);
+	color:black;	
+}
 

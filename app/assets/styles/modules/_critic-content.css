@@ -1,0 +1,18 @@
+.critic-content{
+	margin-left:50px;
+	transform:translateY(-200px);
+	width:33%;
+	background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci.png);
+	display:inline-block;
+	&__img{
+		/*background-image:url(http://localhost:8000/critiquebook/app/assets/images/devinci.png);
+		background-color:black;
+		width:100%;*/
+	}
+		&__title{
+		font-weight: 300;
+		color:white;
+		font-size: 2.4rem;
+		text-align:center;
+	}
+}
