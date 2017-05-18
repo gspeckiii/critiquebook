@@ -21,11 +21,15 @@ img{
 }
 
 a{
-	color:$mainRed;
+	color:white;
+	text-decoration:none;
 }
 
 p{
 	font-size:1.1rem;
+}
+h2{
+	margin-top:5px;
 }
 
 

@@ -1,6 +1,15 @@
 <?php
 $criticList=showCritics();
 ?>
-<nav class="navCritics">
-<?php echo $criticList;?>
-</nav>
+
+<div class="dropdown__critic">
+  <button class="dropbtn">Critics</button>
+ 
+   <?php echo $criticList;?>
+  
+</div>
+
+
+
+
+

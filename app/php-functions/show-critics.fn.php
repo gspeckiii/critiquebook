@@ -6,12 +6,12 @@ function showCritics(){
 	$stmt->bind_result($criticId,$criticName);
 	$stmt->execute();
 
-	$output="<ul>";
+	$output="<div class='dropdown-content'>";
 	while($stmt->fetch()){
 		$criticName=htmlentities($criticName,ENT_QUOTES, "UTF-8");
-		$output .= "<li><a href='index.php?critic_id=$criticId'>$criticName</a></li>";
+		$output .= "<a href='index.php?critic_id=$criticId'>$criticName</a>";
 	}
-	$output.="</ul>";
+	$output.="</div>";
 	$stmt->close();
 	return($output);
 }

@@ -1,32 +1,37 @@
-<?php
 
-require_once 'php-functions/show-authors.fn.php';
-require_once 'php-functions/show-critics.fn.php';
-require_once 'php-includes/head.inc.php';
+<?php
+set_include_path('./php-includes' . PATH_SEPARATOR . './php-functions');
+//functions
+require_once 'show-authors.fn.php';
+require_once 'test-critics.fn.php';
+require_once 'show-critics.fn.php';
+require_once 'show-genre.fn.php';
+require_once 'display-reviews.fn.php';
+require_once 'display-critics.fn.php';
+//includes
+require_once 'head.inc.php';
+
+
 ?>
+<header>
+</header>
 <body>
 
 <?php
+require_once 'header.inc.php';
+require_once 'get-variables.inc.php';
 
-require_once 'php-includes/header.inc.php';
 
-require_once 'php-includes/intro.inc.php';
-require_once 'php-includes/menuAuthors.inc.php';
-require_once 'php-includes/menuCritics.inc.php';
-require_once 'php-includes/critics.inc.php';
-if(isset($_GET['critic_id'])) {
-	$critic_id=$_GET['critic_id'];
-}
-if(isset($critic_id)){
-	require_once 'php-includes/review.inc.php';
-}else{
-	require_once 'php-includes/reviews.inc.php';	
-}
 
+require_once 'intro.inc.php';
+
+require_once 'menuAuthors.inc.php';
+require_once 'menuCritics.inc.php';
+require_once 'menuGenre.inc.php';
+
+require_once 'display-reviews.inc.php';
+require_once 'display-critics.inc.php';
 ?>
-
-
-
 
 </body>
 </html>

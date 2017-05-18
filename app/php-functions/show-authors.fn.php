@@ -6,12 +6,12 @@ function showAuthors(){
 	$stmt->bind_result($authorId,$authorName);
 	$stmt->execute();
 
-	$output="<ul>";
+	$output="<div class='dropdown-content'>";
 	while($stmt->fetch()){
 		$authorName=htmlentities($authorName,ENT_QUOTES, "UTF-8");
-		$output .= "<li><a href='index.php?author_id=$authorId'>$authorName</a></li>";
+		$output .= "<a href='index.php?author_id=$authorId'>$authorName</a>";
 	}
-	$output.="</ul>";
+	$output.="</div>";
 	$stmt->close();
 	return($output);
 }

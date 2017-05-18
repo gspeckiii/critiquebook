@@ -5,6 +5,36 @@
 
 	color:white;
 
-	
 
-}
+}	
+
+	.header__img{
+		height:60px;
+		width:60px;
+		float:left;
+		margin:10px 10px 10px 10px;
+		border-radius:80px;
+		border:4px solid rgba(255,255,255,.6);
+	}
+
+
+	.header__log{
+				position:absolute;
+		top:20px;
+		right:50px;
+
+		z-index:5;
+	
+		width:300px;
+		height:100px;
+	display:inline-block;
+	color:white;
+
+	}
+	.header__logout{
+		position:absolute;
+		top:5px;
+		right:10px;
+		display:inline-block;
+
+	}

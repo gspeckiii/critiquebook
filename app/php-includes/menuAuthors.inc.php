@@ -1,6 +1,11 @@
 <?php
 $authorList=showAuthors();
 ?>
-<nav class="navAuthors">
-<?php echo $authorList;?>
-</nav>
+
+
+<div class="dropdown__author">
+  <button class="dropbtn">Authors</button>
+ 
+   <?php echo $authorList;?>
+  
+</div>

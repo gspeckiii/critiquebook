@@ -12,6 +12,5 @@
 @import "modules/_reviews-content";
 @import "modules/_login";
 @import "modules/_navDrop";
-@import "modules/_navAuthors";
-@import "modules/_navCritics";
+@import "modules/_admin";
 

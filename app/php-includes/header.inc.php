@@ -1,20 +1,42 @@
-<header>
-	<div class="wrapper">
-		<div class="login">
-			<form  action="display-prep.php" method="post">
-			<table   border="1" cellpadding="5" cellspacing="0">
-				<tr>
-					<td style="width: 100px;">User email:</td>
-					<td style="width:100px;"><input type="text" name="useremail"></td>
-				</tr>
-				<tr>
-					<td style="width: 100px;">Password:</td>
-					<td style="width:67px;"><input type="text" name="userpswrd"><input type="submit" value="Login" class="login__input"></td></td>
-				</tr>
-				<tr>	
-				</tr>
-			</table>
-			</form>
-		</div>	
+
+
+	<div class="header__log">
+	<?php
+		if (isset($_SESSION['uId'])){
+
+			$photopath="assets/images/critics/".$_SESSION['uPhoto'];
+
+			echo "<img class= 'header__img' src='".$photopath."'. alt='photo'>";
+			echo "<p>".$_SESSION['uName']."</p>";
+			echo"<form  action='php-includes/admin-logout.inc.php'><input class='header__logout' style='width:60px;height: 60px;' type='submit' value='Logout'>
+		</form>";
+		echo '</form>	<div class="dropdown__admin">
+			  <button class="dropbtn">Add Content</button>
+			  <div class="dropdown-content">
+			  	
+			  	<a href="admin.php?sign=add">Add review</a>
+			  	<a href="admin.php?sign=pro">Update Profile</a>
+			  	<a href="admin.php?sign=rev">Update review</a>
+				</div>
+
+			</div>';
+		}else{
+			echo '<form action="php-includes/admin-login.inc.php" method="post"><input style="width:180px; height: 30px;" type="text" name="criticName" Placeholder="Critic name"><br>
+			<input style="width:180px; height: 30px;" type="Password" name="criticPswrd" Placeholder="Critic password"><br>
+			<input class="header__logout" style="width:60px;height: 60px;" type="submit" value="Login"><h2><a href="admin.php?sign=up">Sign up</a></h2>';
+
+
+
+		}?>
 	</div>
-</header>
+
+
+
+
+
+
+
+
+ 
+
+

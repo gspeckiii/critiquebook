@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html> <!-- -->
 <html>
 <head>
@@ -9,5 +12,7 @@
  <!--Gulp automation uses postCSS & autoprefixer outputs to this temp folder-->
  <link rel="stylesheet" href="temp/styles/styles.css">
    <script src="/temp/scripts/Vendor.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+   </script>
    <?php include('connect.php') ?>
 </head>
