@@ -33,9 +33,15 @@
 			</form>
 			</div>';
 	}
-	elseif ($sign=='pro'){
+	elseif ($sign=='p'){
 				echo '<div class="admin__form">
-			<form  action="php-includes/update-signup.inc.php" method="post">
+				<td style="width: 100px;"> Upload a 300px X 300px profile photo</td>
+				
+				<form action="php-includes/upload.inc.php?caller=critics method="POST" enctype="multipart/form-data">
+				<input type="file" name="file">
+				<button type="submit" name="submit">Save</button>
+			</form>
+			<form  action="php-includes/update-critic.inc.php" method="post">
 			<table   border="1" cellpadding="5" cellspacing="0">
 			<tr>
 				<td style="width: 100;">Name:</td>
@@ -55,32 +61,28 @@
 			</td>
 			</tr>
 			<tr>
-
-				<td style="width: 100px;">Photo</td>
-				<td>			</form>
-				<form action="php-includes/upload.inc.php" method="POST" enctype="multipart/form-data">
-				<input type="file" name="file">
-				<button type="submit" name="submit">UPLOAD</button>
-			</form></td>
-			</tr>
-			<tr>
-
 				<td style="width: 100px;">Update</td>
 				<td><input style="width:125px;height: 25px;" type="submit" value="Update Critic Form"></td>
 			</tr>
-
 				</table>
-
 			</div>';
-		echo $_SESSION['uId'];
-		echo	$_SESSION['uPhoto'];
-			echo $_SESSION['uName'];
-			echo $_SESSION['uBio'];
-			echo $_SESSION['uEmail'];
+	}
+	elseif ($sign=='a'){	
+		require_once 'edit-authors.inc.php';
+		require_once 'search.inc.php';
+		}	
 	}
 
+		?>
 
-}?>
+
+
+
+
+
+
+
+
 
 	<!--
 
@@ -88,28 +90,3 @@
 
 
 <!--
-<div class="admin__panel">
-	<div class="wrapper">
-		<div class="login">
-			<form  action="display-prep.php" method="post">
-			<table   border="1" cellpadding="5" cellspacing="0">
-				<tr>
-					<td style="width: 100px;">User email:</td>
-					<td style="width:100px;"><input type="text" name="useremail"></td>
-				</tr>
-				<tr>
-					<td style="width: 100px;">Password:</td>
-					<td style="width:67px;"><input type="text" name="userpswrd"><input type="submit" value="Login" class="login__input"></td></td>
-				</tr>
-				<tr>	
-				</tr>
-			</table>
-			</form>
-		</div>	
-	</div>
-<?php
-
-
-?>
-</div>
--->

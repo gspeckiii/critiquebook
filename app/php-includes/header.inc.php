@@ -14,16 +14,19 @@
 			  <button class="dropbtn">Add Content</button>
 			  <div class="dropdown-content">
 			  	
-			  	<a href="admin.php?sign=add">Add review</a>
-			  	<a href="admin.php?sign=pro">Update Profile</a>
-			  	<a href="admin.php?sign=rev">Update review</a>
-				</div>
+			  	
+			  	<a href="admin.php?caller=critics">Profile Edit</a>
+			  	<a href="admin.php?caller=authors">Author Edit</a>
+			  	<a href="admin.php?caller=books">Book Edit</a>
+			  	<a href="admin.php?caller=review">Review Edit</a>
+			  
+			</div>
 
 			</div>';
 		}else{
 			echo '<form action="php-includes/admin-login.inc.php" method="post"><input style="width:180px; height: 30px;" type="text" name="criticName" Placeholder="Critic name"><br>
 			<input style="width:180px; height: 30px;" type="Password" name="criticPswrd" Placeholder="Critic password"><br>
-			<input class="header__logout" style="width:60px;height: 60px;" type="submit" value="Login"><h2><a href="admin.php?sign=up">Sign up</a></h2>';
+			<input class="header__logout" style="width:60px;height: 60px;" type="submit" value="Login"><h2><a href="admin.php?caller=critics">Sign up</a></h2>';
 
 
 

@@ -1,5 +1,4 @@
-<?php
-session_start();
+<?php session_start();
 ?>
 <!DOCTYPE html> <!-- -->
 <html>
@@ -14,5 +13,5 @@ session_start();
    <script src="/temp/scripts/Vendor.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
    </script>
-   <?php include('connect.php') ?>
+   <?php include('connect.php'); ?>
 </head>

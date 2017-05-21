@@ -14,6 +14,15 @@ gulp.task('watch',function(){
 	watch('./app/index.php',function(){
 		browserSync.reload();
 	});
+	watch('./app/admin.php',function(){
+		browserSync.reload();
+	});
+	watch('./app/php-includes/**/*.php',function(){
+		browserSync.reload();
+	});
+	watch('./app/php-functions/**/*.php',function(){
+		browserSync.reload();
+	});
 
 	watch('./app/assets/styles/**/*.css',function(){
 	 gulp.start('cssInject');

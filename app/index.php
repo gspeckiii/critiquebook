@@ -1,5 +1,6 @@
 
 <?php
+
 set_include_path('./php-includes' . PATH_SEPARATOR . './php-functions');
 //functions
 require_once 'show-authors.fn.php';
