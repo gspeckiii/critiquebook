@@ -451,6 +451,8 @@ img{
 
 * {
 	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
 }
 
 a{
@@ -464,6 +466,10 @@ p{
 
 h2{
 	margin-top:5px;
+}
+
+ul{
+	list-style:none;
 }
 
 /*  SECTIONS  ============================================================================= */
@@ -1599,12 +1605,6 @@ right:100px;
 		float: left;
 	}
 
-.search-result{
-		position:absolute;
-		top:400px;
-		right:150px;
-	}
-
 .search-results-group{
 		position:relative;
 		display:block;
@@ -1617,5 +1617,82 @@ right:100px;
 		left:25px;
 		color:white;
 		font-size:2.5rem;
+	}
+
+.search-result{
+		margin:0px;
+		padding:0px;
+		position:absolute;
+		top:400px;
+		right:150px;
+	}
+
+.search-result ul li{
+  width:125px;
+  text-align:center;
+  position:relative;
+  float:left;
+  margin-right:4px;
+}
+
+.search-result a{
+  display:block;
+  width:125px;
+  height:25px;
+  line-height:25px;
+  background-color: rgba(165,211,156,.5);
+}
+
+.search-result .sub1 a{
+  margin-top:3px;
+}
+
+.search-result .sub1 li{
+  margin:0px;
+}
+
+.search-result .sub2 a {
+  margin-left:8px;
+}
+
+.search-result li:hover > a{
+  background-color:white;
+  color:black;
+}
+
+.search-result li:hover a:hover{
+  background-color:#dda1a8;
+}
+
+.search-result ul.sub1{
+  display:block;
+  position:absolute;
+  top:-75px;
+  left:-200px;
+}
+
+.search-result ul.sub2{
+  display:none;
+  position:absolute;
+  top:0px;
+  left:121px;
+}
+
+.search-result li:hover .sub1{
+  display:block;
+}
+
+.search-result .sub1 li:hover .sub2{
+  display:block;
+}
+
+.form__upload{
+		position:absolute;
+		
+		bottom:25px;
+		left:25px;
+		color:white;
+		font-size:1.75rem;
+
 	}
 

@@ -1,16 +1,16 @@
 
 
 <?php
-function updatebooks($id,$title,$desc,$genre,$pages,$pubDate,$authorId){
+function updatebooks($aId,$bId,$title,$desc,$genre,$pages,$pubDat){
 	
 	include '../connect.php';
 	$photopath='new.png';
-	if($id == 0){
-		$stmt=$db->prepare("insert into `books` values(?,?,?,?,?,?)");
-		$stmt->bind_param('issssisi'$id,$title,$desc,$genre,$photopath,$pages,$pubDate,$authorId);	
+	if($bId == 0){
+		$stmt=$db->prepare("insert into `books`(title,description,genre,bookPhoto,pages,pubDat,authorId) values(?,?,?,?,?,?,?)");
+		$stmt->bind_param('ssssisi',$title,$desc,$genre,$photopath,$pages,$pubDat,$aId);	
 	}else{
-		$stmt=$db->prepare("UPDATE `books` SET title=?,description=?,genre=?,pubDat=?,authorId=? WHERE `books`.bookId=?");
-		$stmt->bind_param('sssisii',$title,$desc,$genre,$pages,$pubDate,$authorId,$id);
+		$stmt=$db->prepare("UPDATE `books` SET title=?,description=?,genre=?,pages=?,pubDat=? WHERE authorId=? and `books`.bookId=?");
+		$stmt->bind_param('sssisii',$title,$desc,$genre,$pages,$pubDat,$aId,$bId);
 	}
 		$stmt->execute();
 		$stmt->close();

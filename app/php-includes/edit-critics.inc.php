@@ -1,11 +1,7 @@
 <?php
 echo '<div class="menu">
 
-     <label class="label-search" ><strong>  Photo Upload  </strong></label>
-     <form action="php-includes/upload.inc.php?caller=critics" method="POST" enctype="multipart/form-data">
-     	<input type="file" name="file">
-		<button class="button" type="submit" name="caller" value="critics">Upload</button>
-	</form>';
+     ';
 
 	$_SESSION['caller']='critics';
 	if(isset($_SESSION['uId'])) {
@@ -43,7 +39,11 @@ echo'</div>
 	</form>
 
 </fieldset>
-</div>';
+</div><div class="form__upload"><label class="label-search" ><strong>  Photo Upload  </strong></label>
+     <form action="php-includes/upload.inc.php?caller=critics" method="POST" enctype="multipart/form-data">
+     	<input type="file" name="file">
+		<button class="button" type="submit" name="caller" value="critics">Upload</button>
+	</form><img src=""></div>';
 	if(isset($_GET['error'])) {
 		$error=$_GET['error'];
 		if ($error=='Namedup'){

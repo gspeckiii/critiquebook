@@ -18,6 +18,8 @@ img{
 }
 * {
 	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
 }
 
 a{
@@ -30,6 +32,9 @@ p{
 }
 h2{
 	margin-top:5px;
+}
+ul{
+	list-style:none;
 }
 
 

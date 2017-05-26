@@ -15,7 +15,6 @@
 			$_SESSION['genre']=$genre;
 			$_SESSION['bookPhoto']=$bookPhoto;
 			$_SESSION['pages']=$pages;
-			$_SESSION['bookPhoto']=$bookPhoto;
 			$_SESSION['pubDat']=$pubDat;
 		}
 		$stmt->close();

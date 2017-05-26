@@ -1,9 +1,8 @@
 <?php
 session_start();
-if(isset($_POST['caller'])){
-	$caller=$_POST['caller'];
+if(isset($_GET['caller'])){
+	$caller=$_GET['caller'];
 }
-
 if(isset($_SESSION['caller'])){
 	$caller=$_SESSION['caller'];
 }
@@ -57,7 +56,7 @@ require_once '../php-functions/upload.fn.php';
 						$id=(int)$id;
 						//echo gettype($id);
 					updatePhotopath($id,$fileNewName,$caller);
-					$_SESSION['uPhoto']=$fileNewName;
+					
 					
 					header($dest);
 				}else{

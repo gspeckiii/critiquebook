@@ -18,7 +18,7 @@
 			  	<a href="admin.php?caller=critics">Profile Edit</a>
 			  	<a href="admin.php?caller=authors">Author Edit</a>
 			  	<a href="admin.php?caller=books">Book Edit</a>
-			  	<a href="admin.php?caller=review">Review Edit</a>
+			  	<a href="admin.php?caller=reviews">Review Edit</a>
 			  
 			</div>
 
